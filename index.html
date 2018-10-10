@@ -14,7 +14,39 @@
 <body class="bg-light">
     <nav class="navbar navbar-dark bg-dark">
         <span class="navbar-brand mb-0 h1">😎 EQUIPO B11</span>
+        <form class="form-inline">
+          <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#contacto" >Contactanos</button>
+        </form>
       </nav>
+
+      <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">E-Mail:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Mensaje:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <div class="card-group">
         <div class="card text-white bg-warning mb-3 shadow m-3  rounded">
